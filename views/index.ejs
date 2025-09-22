@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aadi Foundation eCommerce</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Aadi Foundation eCommerce</h1>
+  </header>
+
+  <a href="/new">➕ Add Product</a>
+
+  <div class="products">
+    <% products.forEach(product => { %>
+      <div class="product-card">
+        <h2><%= product.name %></h2>
+        <p><%= product.description %></p>
+        <p><strong>₹<%= product.price %></strong></p>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html>
+
